@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding-top: 50px;
+  padding-right: 400px;
+  padding-bottom: 50px;
+  padding-left: 400px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.loginbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+#d1{
+    width: 100%;
+    height: 100%;
+    margin-left:0px;
+    margin-right:0px;
+  }
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-left" >
+            <img src="https://github.com/abhishekkumar98/Hr-recruitment-/blob/master/infinite.jpg?raw=true" width="100px" height="75px">
+            
+            <ul class="navbar-nav">
+                
+              <li class="nav-item" >
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careers.html">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-dark" id="btn1"><a href="Register.html">Sign up</a></button>
+            <button type="button" class="btn btn-dark" id="btn2" ><a href="login.html">Sign in</a></button>
+          </nav>
+    </div>
+
+<form>
+  <div class="container">
+    <h1>Login</h1>
+    <p>Please fill credentials to access your account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    
+    <button type="submit" class="loginbtn" onclick="location.href='after_login.html'">Login</button>
+  </div>
+  
+  <div class="container signin">
+    <p>New User? <a href="Register.html">Sign up</a>.</p>
+  </div>
+</form>
+<div id="d1">
+    <br>
+    <footer class="bg-light text-center text-lg-start bg-dark"  >
+      <br>
+      <div class="text-center p-3 text-light" >
+        © 2021 Copyright:
+        <a class="text-light" href="https://www.infinite.com/">Infinite Computer Solution India Ltd</a>
+        <div>
+            <a href="https://twitter.com/infinite_ics?lang=en" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/company/infinite-computer-solutions/" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/channel/UCnWVzeDYIJ-xtZG64-DqQ6g?view_as=subscriber" class="fa fa-youtube"></a>
+            <a href="https://www.facebook.com/infinitecomputersolutions" class="fa fa-facebook"></a>  
+        </div>
+       
+    </div>
+    </footer>
+  </div>
+
+</body>
+</html>
